@@ -32,13 +32,19 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.11.2</version>
+            <version>6.1.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-client</artifactId>
-            <version>6.2.12.Final</version>
+            <version>7.0.5.Final</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.parsson</groupId>
+            <artifactId>parsson</artifactId>
+            <version>1.1.9</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -62,12 +68,6 @@
                 <artifactId>liberty-maven-plugin</artifactId>
                 <version>3.8.2</version>
                 <configuration>
-                    <assemblyArtifact>
-                        <groupId>io.openliberty.beta</groupId>
-                        <artifactId>openliberty-runtime</artifactId>
-                        <version>25.0.0.10-beta</version>
-                        <type>zip</type>
-                    </assemblyArtifact>
                     <copyDependencies>
                         <dependencyGroup>
                             <!-- Relative to server config directory -->
