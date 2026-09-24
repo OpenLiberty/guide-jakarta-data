@@ -10,7 +10,6 @@
 :projectid: jakarta-data
 :page-duration: 15 minutes
 :page-releasedate: 2026-09-23
-:page-majorupdateddate: 2026-09-23
 :page-description: Learn how to use Jakarta Data to access and persist data to a database for your microservices.
 :page-tags: ['jakarta-ee']
 :page-related-guides: []

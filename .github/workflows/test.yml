@@ -2,7 +2,7 @@ name: Test application
 
 on:
   pull_request:
-    branches: [ draft, staging ]
+    branches: [ prod, staging ]
 
 jobs:
   check-files:
@@ -32,7 +32,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: ./tools/pr-checker/linters/
-          DEFAULT_BRANCH: draft
+          DEFAULT_BRANCH: prod
           #Should this just be VALIDATE_JAVA: true?
           VALIDATE_BIOME_FORMAT: false
           VALIDATE_BIOME_LINT: false
